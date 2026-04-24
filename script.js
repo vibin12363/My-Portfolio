@@ -3,9 +3,9 @@
 ───────────────────────────────────────────────────── */
 
 /* ── TYPING ANIMATION ─────────────────────────────── */
-const roles   = ['Student', 'Web Developer', 'AI Enthusiast'];
-const roleEl  = document.getElementById('role-text');
-let   roleIdx = 0, charIdx = 0, deleting = false;
+const roles = ['Generative AI Engineer', 'Web Developer', 'LLM Enthusiast', 'B.E. CSE Student'];
+const roleEl = document.getElementById('role-text');
+let roleIdx = 0, charIdx = 0, deleting = false;
 
 function typeRole() {
   const current = roles[roleIdx];
@@ -23,7 +23,7 @@ function typeRole() {
     charIdx--;
     if (charIdx === 0) {
       deleting = false;
-      roleIdx  = (roleIdx + 1) % roles.length;
+      roleIdx = (roleIdx + 1) % roles.length;
       setTimeout(typeRole, 400);
       return;
     }
@@ -35,7 +35,7 @@ typeRole();
 
 /* ── MOBILE MENU ──────────────────────────────────── */
 const menuToggle = document.getElementById('menuToggle');
-const navLinks   = document.getElementById('navLinks');
+const navLinks = document.getElementById('navLinks');
 
 menuToggle.addEventListener('click', () => {
   const open = navLinks.classList.toggle('open');
@@ -53,8 +53,8 @@ document.querySelectorAll('.nav-link').forEach(link => {
 
 
 /* ── SCROLL SPY — active nav link ─────────────────── */
-const sections  = document.querySelectorAll('section[id]');
-const navItems  = document.querySelectorAll('.nav-link');
+const sections = document.querySelectorAll('section[id]');
+const navItems = document.querySelectorAll('.nav-link');
 
 function onScroll() {
   let current = '';
@@ -85,16 +85,16 @@ const FORMSPHERE_ENDPOINT = 'https://formspree.io/f/xwvwnbdy';
 //                                          Replace with your actual Form ID
 
 const contactForm = document.getElementById('contactForm');
-const submitBtn   = document.getElementById('submitBtn');
-const formStatus  = document.getElementById('formStatus');
+const submitBtn = document.getElementById('submitBtn');
+const formStatus = document.getElementById('formStatus');
 
 contactForm.addEventListener('submit', async (e) => {
   e.preventDefault();
 
   // Basic validation
-  const company  = document.getElementById('company').value.trim();
-  const contact  = document.getElementById('contact_detail').value.trim();
-  const message  = document.getElementById('message').value.trim();
+  const company = document.getElementById('company').value.trim();
+  const contact = document.getElementById('contact_detail').value.trim();
+  const message = document.getElementById('message').value.trim();
 
   if (!company || !contact || !message) {
     setStatus('Please fill in all fields.', 'error');
@@ -102,7 +102,7 @@ contactForm.addEventListener('submit', async (e) => {
   }
 
   // Disable button while submitting
-  submitBtn.disabled    = true;
+  submitBtn.disabled = true;
   submitBtn.textContent = 'Sending…';
   setStatus('', '');
 
@@ -119,20 +119,20 @@ contactForm.addEventListener('submit', async (e) => {
     } else {
       // Try to parse error from Formsphere
       let errText = 'Something went wrong. Please try again.';
-      try { const d = await res.json(); errText = d.message || errText; } catch (_) {}
+      try { const d = await res.json(); errText = d.message || errText; } catch (_) { }
       setStatus(errText, 'error');
     }
   } catch (err) {
     setStatus('Network error — please check your connection.', 'error');
   } finally {
-    submitBtn.disabled    = false;
+    submitBtn.disabled = false;
     submitBtn.textContent = 'Send Message';
   }
 });
 
 function setStatus(msg, type) {
-  formStatus.textContent  = msg;
-  formStatus.className    = 'form-status ' + type;
+  formStatus.textContent = msg;
+  formStatus.className = 'form-status ' + type;
 }
 
 
@@ -155,15 +155,15 @@ const fadeEls = document.querySelectorAll(
 );
 
 fadeEls.forEach((el, i) => {
-  el.style.opacity      = '0';
-  el.style.transform    = 'translateY(20px)';
-  el.style.transition   = `opacity 0.5s ease ${i * 0.04}s, transform 0.5s ease ${i * 0.04}s`;
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(20px)';
+  el.style.transition = `opacity 0.5s ease ${i * 0.04}s, transform 0.5s ease ${i * 0.04}s`;
   observer.observe(el);
 });
 
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.visible, [style*="opacity: 1"]').forEach(el => {
-    el.style.opacity   = '1';
+    el.style.opacity = '1';
     el.style.transform = 'translateY(0)';
   });
 });

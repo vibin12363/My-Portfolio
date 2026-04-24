@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vibin · Portfolio</title>
+  <title>Vibin Iyyappan · Generative AI Engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Outfit:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
   <!-- ─── NAVBAR ──────────────────────────────────────── -->
   <nav id="navbar">
-    <div class="nav-logo">V.</div>
+    <div class="nav-logo"></div>
     <ul class="nav-links" id="navLinks">
-      <li><a href="#home"       class="nav-link">Home</a></li>
-      <li><a href="#about"      class="nav-link">About</a></li>
-      <li><a href="#skills"     class="nav-link">Skills</a></li>
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
       <li><a href="#experience" class="nav-link">Experience</a></li>
-      <li><a href="#projects"   class="nav-link">Projects</a></li>
-      <li><a href="#contact"    class="nav-link">Contact</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#achievements" class="nav-link">Achievements</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
     </ul>
     <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
       <span></span><span></span><span></span>
@@ -35,18 +40,19 @@
         <span id="role-text"></span><span class="cursor">|</span>
       </div>
       <p class="hero-bio">
-        Student at Jayamatha Engineering College under Anna University.
-        Passionate about AI and web development.
+        Aspiring Generative AI Engineer &amp; 3rd-year B.E. CSE student at Jayamatha Engineering
+        College, Anna University. Building AI-powered web apps with LLM APIs, prompt engineering,
+        and modern JavaScript.
       </p>
       <div class="hero-actions">
-        <a href="#" class="btn btn-solid">Download CV</a>
+        <a href="files/Vibin_Iyyappan_GenAI_Resume_Final.pdf" download class="btn btn-solid">Download CV</a>
         <a href="#contact" class="btn btn-ghost">Get In Touch</a>
       </div>
     </div>
     <div class="hero-visual">
       <div class="avatar-ring">
         <img src="What.jpeg" alt="Vibin"
-             onerror="this.style.display='none';document.getElementById('avatarFallback').style.display='flex';" />
+          onerror="this.style.display='none';document.getElementById('avatarFallback').style.display='flex';" />
         <div class="avatar-fallback" id="avatarFallback">V</div>
       </div>
     </div>
@@ -61,29 +67,31 @@
     <div class="about-grid">
       <div class="about-text-block">
         <p>
-          I'm a tech enthusiast and quick learner currently pursuing my engineering degree.
-          My passion lies at the intersection of <em>artificial intelligence</em> and web development —
-          I love turning ideas into functional, elegant digital experiences.
+          I'm a motivated 3rd-year Computer Science undergraduate with hands-on experience building
+          and deploying <em>AI-powered web applications</em>. I've developed and launched five live
+          projects — including an AI Text Summarizer, AI Quiz Generator, and AI Code Explainer —
+          all powered by the Groq API (LLaMA 3.3) and deployed on Netlify.
         </p>
         <p>
-          I believe in continuous learning and have earned multiple certificates through
-          national programs, industry workshops, and platforms like Kaggle.
+          I've completed AI training through Google &amp; Kaggle, Pantech.AI, IBM, and Naan Mudhalvan
+          programs. My focus is on LLM APIs, prompt engineering, and building intelligent,
+          user-facing applications.
         </p>
         <div class="hobbies-block">
           <h3 class="hobbies-title">Hobbies &amp; Interests</h3>
           <div class="hobby-tags">
             <span>🏏 Cricket</span>
-            <span>🤖 Artificial Intelligence</span>
+            <span>🤖 Generative AI</span>
             <span>🌐 Web Development</span>
             <span>📚 Reading Tech Blogs</span>
-            <span>🔬 Exploring New Tech</span>
+            <span>🔬 Exploring LLMs</span>
           </div>
         </div>
       </div>
       <div class="about-stats">
         <div class="stat-card">
-          <span class="stat-num">5+</span>
-          <span class="stat-label">Projects</span>
+          <span class="stat-num">5</span>
+          <span class="stat-label">Live Projects</span>
         </div>
         <div class="stat-card">
           <span class="stat-num">10+</span>
@@ -105,32 +113,47 @@
     </div>
     <div class="skills-grid">
       <div class="skill-group">
-        <h3 class="skill-group-title">Languages</h3>
+        <h3 class="skill-group-title">Proficient</h3>
+        <div class="skill-tags">
+          <span>HTML5</span>
+          <span>CSS3</span>
+          <span>JavaScript</span>
+          <span>Groq API</span>
+          <span>LLaMA 3.3</span>
+          <span>Web Crypto API</span>
+          <span>Git</span>
+          <span>GitHub</span>
+          <span>Netlify</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3 class="skill-group-title">Familiar</h3>
         <div class="skill-tags">
           <span>Python</span>
-          <span>C</span>
-          <span>JavaScript</span>
-          <span>HTML</span>
-          <span>CSS</span>
-        </div>
-      </div>
-      <div class="skill-group">
-        <h3 class="skill-group-title">Tools &amp; Frameworks</h3>
-        <div class="skill-tags">
-          <span>Git &amp; GitHub</span>
+          <span>SQL</span>
+          <span>Spring Boot</span>
+          <span>Spring Data JPA</span>
+          <span>Spring REST</span>
           <span>VS Code</span>
-          <span>NumPy</span>
-          <span>Pandas</span>
-          <span>Kaggle</span>
+          <span>GitHub Pages</span>
         </div>
       </div>
       <div class="skill-group">
-        <h3 class="skill-group-title">Domains</h3>
+        <h3 class="skill-group-title">AI / LLM</h3>
         <div class="skill-tags">
-          <span>Machine Learning</span>
-          <span>Web Development</span>
-          <span>Data Science</span>
-          <span>AI Research</span>
+          <span>Groq API Integration</span>
+          <span>LLM Prompt Engineering</span>
+          <span>AI Agents</span>
+          <span>Generative AI</span>
+          <span>JSON-structured Prompting</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3 class="skill-group-title">Security</h3>
+        <div class="skill-tags">
+          <span>SHA-256 Hashing</span>
+          <span>Token-based Sessions</span>
+          <span>Browser Storage Security</span>
         </div>
       </div>
     </div>
@@ -148,49 +171,66 @@
         <div class="timeline-card">
           <div class="timeline-top">
             <div>
-              <h3 class="tl-role">Web Development Intern</h3>
-              <span class="tl-company">Eloiacs Softwa Private Limited</span>
+              <h3 class="tl-role">Full Stack Development Intern</h3>
+              <span class="tl-company">Eloiacs Softwa Pvt. Ltd. · Nagercoil</span>
             </div>
-            <span class="tl-period">15 Days · Nagercoil</span>
+            <span class="tl-period">Jul 5 – Jul 25, 2025</span>
           </div>
           <p class="tl-desc">
-            Completed a hands-on internship focused on building responsive, functional web
-            applications. Gained practical industry experience in frontend development and earned
-            a certificate of completion.
+            Gained hands-on experience in full stack web development including front-end and
+            back-end integration in a professional software environment. Collaborated with senior
+            developers to understand industry-standard workflows, version control practices, and
+            agile development.
           </p>
           <div class="skill-tags tl-tags">
-            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive Design</span>
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Full Stack</span><span>Git</span>
           </div>
         </div>
       </div>
     </div>
 
     <div class="certs-section">
-      <h3 class="certs-title">Certifications &amp; Achievements</h3>
+      <h3 class="certs-title">Certifications &amp; Training</h3>
       <div class="cert-grid">
         <div class="cert-item">
           <span class="cert-icon">🏆</span>
-          <span>Web Development Internship — Eloiacs Softwa Pvt. Ltd.</span>
+          <span>Full Stack Development Internship — Eloiacs Softwa Pvt. Ltd.</span>
         </div>
         <div class="cert-item">
-          <span class="cert-icon">🎓</span>
-          <span>Naan Mudhalvan Course Certificate — Anna University</span>
+          <span class="cert-icon">🤖</span>
+          <span>5-Day AI Agents Intensive Course — Google &amp; Kaggle (Badge)</span>
         </div>
         <div class="cert-item">
           <span class="cert-icon">📊</span>
-          <span>Kaggle 5-Day Gen AI Intensive — Google</span>
+          <span>Kaggle Community Member Badge — Kaggle</span>
         </div>
         <div class="cert-item">
-          <span class="cert-icon">🏅</span>
-          <span>Inter-College Event Participation Certificates</span>
+          <span class="cert-icon">🧠</span>
+          <span>30-Day AI Masterclass — Pantech.AI</span>
         </div>
         <div class="cert-item">
-          <span class="cert-icon">🏅</span>
-          <span>Government Program Participation Certificate</span>
+          <span class="cert-icon">🎓</span>
+          <span>Front End Technologies — IBM · Naan Mudhalvan / TNSDC</span>
         </div>
         <div class="cert-item">
-          <span class="cert-icon">⭐</span>
-          <span>Extra-Curricular College Event Certificates</span>
+          <span class="cert-icon">🎓</span>
+          <span>HTML, CSS &amp; JavaScript Fundamentals — IBM</span>
+        </div>
+        <div class="cert-item">
+          <span class="cert-icon">🎓</span>
+          <span>Enterprise Business Productivity Learner — HCL · Naan Mudhalvan</span>
+        </div>
+        <div class="cert-item">
+          <span class="cert-icon">🎓</span>
+          <span>Spring 5 Basics with Spring Boot — Infosys Springboard · Naan Mudhalvan</span>
+        </div>
+        <div class="cert-item">
+          <span class="cert-icon">🎓</span>
+          <span>Spring Data JPA with Boot — Infosys Springboard · Naan Mudhalvan</span>
+        </div>
+        <div class="cert-item">
+          <span class="cert-icon">🎓</span>
+          <span>Spring REST — Infosys Springboard · Naan Mudhalvan</span>
         </div>
       </div>
     </div>
@@ -206,40 +246,120 @@
 
       <div class="project-card">
         <span class="proj-num">01</span>
-        <h3>Portfolio Website</h3>
-        <p>Clean, responsive personal portfolio built with pure HTML, CSS &amp; JavaScript. Features smooth animations and a minimal dark aesthetic.</p>
-        <div class="skill-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        <h3>SummarAI — AI Text Summarizer</h3>
+        <p>AI-powered web app that summarizes any text using Groq API (LLaMA 3.3 70B) with 4 output modes: Concise,
+          Bullet Points, Detailed, and ELI5. Includes word count stats, compression ratio, and copy-to-clipboard.</p>
+        <div class="skill-tags"><span>JavaScript</span><span>Groq API</span><span>LLaMA
+            3.3</span><span>HTML</span><span>CSS</span></div>
+        <div class="proj-links">
+          <a href="https://summar-ai-textsummarizer.netlify.app" target="_blank" class="proj-link">Live ↗</a>
+          <a href="https://github.com/vibin12363/SummarAI-Text-Summarizer" target="_blank" class="proj-link">GitHub
+            ↗</a>
+        </div>
       </div>
 
       <div class="project-card">
         <span class="proj-num">02</span>
-        <h3>Student Result Dashboard</h3>
-        <p>A secure, login-protected personal dashboard to track my own Anna University semester results and timetables. Built as a single-page app with tab navigation, DOB-based authentication, and session management via localStorage.</p>
-        <div class="skill-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>SPA</span><span>localStorage</span></div>
+        <h3>QuizForge — AI Quiz Generator</h3>
+        <p>Generates 1–25 MCQ or True/False questions from any topic or pasted text, with 3 difficulty levels. Features
+          instant AI-generated answer explanations, live progress bar, and a score card.</p>
+        <div class="skill-tags"><span>JavaScript</span><span>Groq API</span><span>LLaMA 3.3</span><span>Prompt
+            Engineering</span></div>
+        <div class="proj-links">
+          <a href="https://quizforge-ai-quiz-generator.netlify.app" target="_blank" class="proj-link">Live ↗</a>
+          <a href="https://github.com/vibin12363/QuizForge-AI-Quiz-Generator" target="_blank" class="proj-link">GitHub
+            ↗</a>
+        </div>
       </div>
 
       <div class="project-card">
         <span class="proj-num">03</span>
-        <h3>Internship Web Project</h3>
-        <p>Developed during internship at Eloiacs Softwa — a fully responsive multi-page website built for a real business client in Nagercoil.</p>
-        <div class="skill-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        <h3>CodeLens — AI Code Explainer</h3>
+        <p>Multi-mode AI code analysis tool supporting 25+ languages with 7 modes: Explain, ELI5, Find Bugs, Optimize,
+          Add Comments, Format &amp; Minify. Shows before/after byte size with downloadable output.</p>
+        <div class="skill-tags"><span>JavaScript</span><span>Groq API</span><span>LLaMA
+            3.3</span><span>HTML</span><span>CSS</span></div>
+        <div class="proj-links">
+          <a href="https://codelens-ai-code-explainer.netlify.app" target="_blank" class="proj-link">Live ↗</a>
+          <a href="https://github.com/vibin12363/CodeLens-AI-Code-Explainer" target="_blank" class="proj-link">GitHub
+            ↗</a>
+        </div>
       </div>
 
-      <div class="project-card coming-soon">
+      <div class="project-card">
         <span class="proj-num">04</span>
-        <div class="coming-badge">Coming Soon</div>
-        <h3>Your Next Project</h3>
-        <p>More projects in progress. Building, learning, and shipping — stay tuned.</p>
-        <div class="skill-tags"><span>TBD</span></div>
+        <div class="private-badge">🔒 Private</div>
+        <h3>Academic Dashboard — Secure Portal</h3>
+        <p>Secure personal academic portal with SHA-256 hashed authentication via Web Crypto API. Features semester
+          timetables, results, GPA/CGPA tracking, PDF downloads, and a 30-state back-button lock. Access is restricted —
+          only I can log in with my credentials.</p>
+        <div class="skill-tags"><span>JavaScript</span><span>Web Crypto API</span><span>SHA-256</span><span>SPA</span>
+        </div>
+        <div class="proj-links">
+          <a href="https://github.com/vibin12363/AU" target="_blank" class="proj-link">GitHub ↗</a>
+        </div>
       </div>
 
+      <div class="project-card">
+        <span class="proj-num">05</span>
+        <div class="current-badge">👀 You're viewing it</div>
+        <h3>Personal Portfolio Website</h3>
+        <p>This very website — designed and developed from scratch with smooth scroll animations, a typing role effect,
+          brand-colored social hover effects, an Achievements section, and a Formsphere-powered contact form.</p>
+        <div class="skill-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive</span></div>
+        <div class="proj-links">
+          <a href="https://github.com/vibin12363/My-Portfolio" target="_blank" class="proj-link">GitHub ↗</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── ACHIEVEMENTS ─────────────────────────────────── -->
+  <section id="achievements">
+    <div class="section-label">
+      <span class="sec-num">05</span>
+      <h2 class="sec-title">Achievements</h2>
+    </div>
+    <div class="achieve-grid">
+      <div class="achieve-card">
+        <span class="achieve-icon">🏅</span>
+        <div>
+          <h4>Paper Presentation</h4>
+          <p>Tech Sangamam 2K24 · DMI College of Engineering, Dept. of CSE</p>
+          <span class="achieve-date">Oct 2024</span>
+        </div>
+      </div>
+      <div class="achieve-card">
+        <span class="achieve-icon">🥇</span>
+        <div>
+          <h4>First Prize — Dumb Charades</h4>
+          <p>NEXPLORA 2K24 · Jayamatha Engineering College</p>
+          <span class="achieve-date">Jun 2024</span>
+        </div>
+      </div>
+      <div class="achieve-card">
+        <span class="achieve-icon">🏏</span>
+        <div>
+          <h4>Winner — Cricket (Boys)</h4>
+          <p>29th Annual Sports Day · Jayamatha Engineering College</p>
+          <span class="achieve-date">May 2024</span>
+        </div>
+      </div>
+      <div class="achieve-card">
+        <span class="achieve-icon">🏭</span>
+        <div>
+          <h4>Industrial Visit Certificate</h4>
+          <p>Roriri Software Solutions Pvt. Ltd.</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- ─── CONTACT ──────────────────────────────────────── -->
   <section id="contact">
     <div class="section-label">
-      <span class="sec-num">05</span>
+      <span class="sec-num">06</span>
       <h2 class="sec-title">Contact</h2>
     </div>
     <div class="contact-wrapper">
@@ -251,55 +371,56 @@
 
         <div class="socials">
           <!-- LinkedIn -->
-          <a href="https://www.linkedin.com/in/vibin-iyyappan-732017374"
-             class="social-btn linkedin" target="_blank" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/in/vibin-iyyappan-732017374" class="social-btn linkedin" target="_blank"
+            aria-label="LinkedIn">
             <svg viewBox="0 0 24 24" fill="currentColor">
-              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
             </svg>
             <span>LinkedIn</span>
           </a>
 
           <!-- GitHub -->
-          <a href="https://github.com/vibin12363"
-             class="social-btn github" target="_blank" aria-label="GitHub">
+          <a href="https://github.com/vibin12363" class="social-btn github" target="_blank" aria-label="GitHub">
             <svg viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+              <path
+                d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
             </svg>
             <span>GitHub</span>
           </a>
 
           <!-- Instagram -->
-          <a href="https://www.instagram.com/smiling_nomad_?igsh=MXhocnpjeXNtN3VmaA=="
-             class="social-btn instagram" target="_blank" aria-label="Instagram">
+          <a href="https://www.instagram.com/smiling_nomad_?igsh=MXhocnpjeXNtN3VmaA==" class="social-btn instagram" target="_blank" aria-label="Instagram">
             <svg viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
             </svg>
             <span>Instagram</span>
           </a>
 
           <!-- WhatsApp -->
-          <a href="https://wa.me/918300303796"
-             class="social-btn whatsapp" target="_blank" aria-label="WhatsApp">
+          <a href="https://wa.me/918300303796" class="social-btn whatsapp" target="_blank" aria-label="WhatsApp">
             <svg viewBox="0 0 24 24" fill="currentColor">
-              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
             </svg>
             <span>WhatsApp</span>
           </a>
 
           <!-- X (Twitter) -->
-          <a href="#"
-             class="social-btn twitter" target="_blank" aria-label="X (Twitter)">
+          <a href="https://twitter.com/vibin_iyyappan" class="social-btn twitter" target="_blank" aria-label="X (Twitter)">
             <svg viewBox="0 0 24 24" fill="currentColor">
-              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.213 5.567L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.213 5.567L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
             </svg>
             <span>X (Twitter)</span>
           </a>
 
           <!-- Telegram -->
-          <a href="#"
-             class="social-btn telegram" target="_blank" aria-label="Telegram">
+          <a href="#" class="social-btn telegram" target="_blank" aria-label="Telegram">
             <svg viewBox="0 0 24 24" fill="currentColor">
-              <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+              <path
+                d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
             </svg>
             <span>Telegram</span>
           </a>
@@ -316,21 +437,20 @@
       <form class="contact-form" id="contactForm">
         <div class="form-group">
           <label for="company">Company Name</label>
-          <input type="text" id="company" name="company"
-                 placeholder="Your company or organisation" required />
+          <input type="text" id="company" name="company" placeholder="Your company or organisation" required />
         </div>
         <div class="form-group">
           <label for="contact_detail">Contact</label>
-          <input type="text" id="contact_detail" name="contact"
-                 placeholder="Email, phone, or LinkedIn URL" required />
+          <input type="text" id="contact_detail" name="contact" placeholder="Email, phone, or LinkedIn URL" required />
         </div>
         <div class="form-group">
           <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5"
-                    placeholder="Tell me about the opportunity…" required></textarea>
+          <textarea id="message" name="message" rows="5" placeholder="Tell me about the opportunity…"
+            required></textarea>
         </div>
         <div style="text-align:center;">
-          <button type="submit" class="btn btn-solid" id="submitBtn" style="padding:10px 28px;font-size:12px;">Send Message</button>
+          <button type="submit" class="btn btn-solid" id="submitBtn" style="padding:10px 28px;font-size:12px;">Send
+            Message</button>
         </div>
         <p class="form-status" id="formStatus"></p>
       </form>
@@ -345,4 +465,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
