@@ -4,7 +4,7 @@ A clean, minimal personal portfolio website built with pure HTML, CSS, and JavaS
 
 ## Live Demo
 
-[View Portfolio](#) <!-- Replace # with your hosted URL -->
+[View Portfolio](https://vibin-portfolio-website.netlify.app/) <!-- Replace # with your hosted URL -->
 
 ## Features
 
