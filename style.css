@@ -1019,12 +1019,29 @@ footer {
 }
 
 /* ── RESPONSIVE ───────────────────────────────────── */
+
+/* Large tablets / small laptops (nav starts getting tight) */
+@media (max-width: 1200px) {
+  .nav-links {
+    gap: 20px;
+  }
+
+  .nav-link {
+    font-size: 12px;
+  }
+}
+
+/* Tablets */
 @media (max-width: 1024px) {
   .about-grid {
     grid-template-columns: 1fr;
   }
 
   .skills-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .projects-grid {
     grid-template-columns: 1fr 1fr;
   }
 
@@ -1036,13 +1053,23 @@ footer {
   .about-stats {
     max-width: 400px;
   }
+
+  .cert-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+
+  .achieve-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
 }
 
+/* Mobile */
 @media (max-width: 768px) {
   section {
     padding: 80px 24px;
   }
 
+  /* Hamburger nav */
   .nav-links {
     display: none;
     flex-direction: column;
@@ -1055,6 +1082,8 @@ footer {
     padding: 24px;
     gap: 20px;
     border-bottom: 1px solid var(--border);
+    max-height: calc(100vh - var(--nav-h));
+    overflow-y: auto;
   }
 
   .nav-links.open {
@@ -1065,6 +1094,7 @@ footer {
     display: flex;
   }
 
+  /* Hero */
   .hero {
     flex-direction: column-reverse;
     text-align: center;
@@ -1085,11 +1115,20 @@ footer {
     height: 200px;
   }
 
+  /* Grids → single column */
   .skills-grid {
     grid-template-columns: 1fr;
   }
 
   .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cert-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .achieve-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1102,18 +1141,36 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     max-width: 100%;
   }
+
+  .timeline-top {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .tl-period {
+    align-self: flex-start;
+  }
 }
 
+/* Small phones */
 @media (max-width: 480px) {
+  section {
+    padding: 64px 18px;
+  }
+
   .about-stats {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .timeline {
     padding-left: 20px;
   }
 
-  .timeline-top {
-    flex-direction: column;
+  .hero-name {
+    letter-spacing: -1px;
+  }
+
+  .proj-links {
+    flex-wrap: wrap;
   }
 }
